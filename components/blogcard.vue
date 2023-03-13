@@ -1,16 +1,15 @@
 <template>
     <div class="blg">
-        <div class="lg:flex ">
-            <img class="object-cover w-full h-56 rounded-lg lg:w-64" src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
-            <div class="flex flex-col justify-between py-6 lg:mx-6">
-                <a href="#" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
-                    How to use sticky note for problem solving
-                </a>
-                <div class="text-13 text-slate-300">
-                	Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Ipsum eos inventore, earum ad itaque ea quae modi deleniti aspernatur est eum officia, voluptatum incidunt quam accusantium cum.
-                </div>
-                <span class="text-sm font-semibold text-gray-500 dark:text-gray-300">On: 20 October 2019</span>
-            </div>
+        <div>
+            <p class="pt-12 mb-3 text-sm font-normal text-gray-500">April 16, 2020</p>
+            <h2 class="mb-2 text-xl font-extrabold leading-snug tracking-tight text-gray-800 md:text-3xl">
+                <a href="#" class="text-gray-900 hover:text-purple-700">Process Documents Using Artificial Intelligence For RPA Bots</a>
+            </h2>
+            <p class="mb-4 text-base font-normal text-gray-600">
+                Earlier RPA bots used to have some limitations like it would take structured data for processing from excel, database, on these data. But with advancements in technology like OCR (Optical
+                Character Recognition) and Machine Learning, RPA bots are capable of extracting these data …
+            </p>
+            <a href="/blogs/1" class="btn btn-light btn-sm bg-green-200 p-2">Continue Reading</a>
         </div>
     </div>
 </template>

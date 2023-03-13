@@ -24,7 +24,7 @@
                     <div class="mt-4 md:mx-4 md:mt-0">
                         <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">Copy & paste components</h1>
 
-                        <p class="mt-3 text-gray-500 dark:text-gray-300">
+                        <p class="mt-3 text-gray-500 dark:text-gray-300" ref="pdfSection">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab nulla quod dignissimos vel non corrupti doloribus voluptatum eveniet
                         </p>
                     </div>

@@ -8,8 +8,12 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxt/devtools": "^0.2.5",
     "@nuxtjs/tailwindcss": "^6.4.1",
     "nuxt": "^3.2.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "highlight.js": "^11.7.0",
+    "markdown-it": "^13.0.1"
+  }
 }

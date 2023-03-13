@@ -32,6 +32,9 @@
                                 <NuxtLink to="/blogs" class="text-gray-500 transition hover:text-gray-500/75">
                                     Blog
                                 </NuxtLink>
+                                <NuxtLink to="/price" class="text-gray-500 transition hover:text-gray-500/75">
+                                    Pricing
+                                </NuxtLink>
                             </ul>
                         </nav>
                     </div>
