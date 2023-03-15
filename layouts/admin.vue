@@ -1,5 +1,9 @@
 <template>
 	<div class="">
-		hi
+		
+		<!-- nav: name , path -->
+		<adminNavv/>
+		<slot/>
+		<Foo/>
 	</div>
 </template>
