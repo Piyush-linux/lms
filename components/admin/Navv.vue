@@ -18,35 +18,34 @@
                     <div class="flex items-center">
                         <div class="flex items-center divide-x divide-gray-100 border-x border-gray-100">
                             <span>
-                                <a href="/cart" class="block border-b-4 border-transparent p-5 hover:border-emerald-500">
-                                    <span class="iconify h-6 w-6" data-icon="icon-park-solid:gitlab"></span>
+                                <a href="/profile" class="block border-b-4 border-transparent p-5 hover:border-emerald-500">
+                                    <span class="iconify h-6 w-6" data-icon="basil:user-solid"></span>
                                     <span class="sr-only">Profile</span>
                                 </a>
                             </span>
+                            <span class="hidden sm:block">
+                                <a href="/courses" class="block border-b-4 border-transparent p-5 hover:border-emerald-500">
+                                    <span class="iconify h-6 w-6" data-icon="basil:dialpad-solid"></span>
+                                    <span class="sr-only"> Courses </span>
+                                </a>
+                            </span>
                             <span>
-                                <a href="/cart" class="block border-b-4 border-transparent p-5 hover:border-emerald-500">
+                                <a href="/enrolled" class="block border-b-4 border-transparent p-5 hover:border-emerald-500">
+                                    <span class="iconify w-6 h-6" data-icon="basil:stack-outline"></span>
+                                    <span class="sr-only"> Enrolled </span>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="/shop" class="block border-b-4 border-transparent p-5 hover:border-emerald-500">
                                 	<!-- <span class="iconify" data-icon=""></span> -->
                                     <span class="iconify h-6 w-6" data-icon="basil:shopping-bag-outline"></span>
-                                    <span class="sr-only">Cart</span>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="/account" class="block border-b-4 border-transparent p-5 hover:border-emerald-500">
-                                    <span class="iconify w-6 h-6" data-icon="basil:stack-outline"></span>
-                                    <span class="sr-only"> Account </span>
-                                </a>
-                            </span>
-                            <span class="hidden sm:block">
-                                <a href="/search" class="block border-b-4 border-transparent p-5 hover:border-emerald-500">
-                                    <span class="iconify h-6 w-6" data-icon="basil:dialpad-solid"></span>
-                                    <!-- <span class="iconify " data-icon="carbon:calendar-heat-map"></span> -->
-                                    <span class="sr-only"> Search </span>
+                                    <span class="sr-only">shop</span>
                                 </a>
                             </span>
                             <span class="hidden sm:block">
                                 <a href="/search" class="block border-b-4 border-transparent p-5 hover:border-emerald-500">
                                     <span class="iconify h-6 w-6" data-icon="basil:login-outline"></span>
-                                    <span class="sr-only"> Search </span>
+                                    <span class="sr-only"> logout </span>
                                 </a>
                             </span>
                         </div>

@@ -1,9 +1,8 @@
 <template>
 	<div class="">
 		<!--
-
-    Graphic from https://www.opendoodles.com/
--->
+      Graphic from https://www.opendoodles.com/
+    -->
 
 <div class="grid h-screen px-4 bg-white place-content-center">
   <div class="text-center">

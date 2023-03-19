@@ -11,5 +11,8 @@ export default defineNuxtConfig({
             ],
         }
     },
-    modules: ['@nuxtjs/tailwindcss', '@nuxt/devtools']
+    modules: [
+        '@nuxtjs/tailwindcss'
+        // ,'@nuxt/devtools'
+        ]
 })

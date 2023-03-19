@@ -1,5 +1,7 @@
 # RESOURCE
 
+Dashboard : https://www.tailwind-kit.com/components/data
+
 ## UI
 - https://app-tailwind.preview.uideck.com/
 icon : https://www.flaticon.com/free-icon/cat_6148636?term=cat&page=12&position=40&origin=search&related_id=6148636
@@ -27,9 +29,20 @@ icon : https://www.flaticon.com/free-icon/cat_6148636?term=cat&page=12&position=
 - https://css.gg/airplane
 
 ## Sitemap
-- Web
-- Admin
-- Profile
+- Web(website)
+	- home
+	- blog
+	- team
+	- about
+- Admin(strapi cms)
+	- profile
+	- courses
+	- enrolled
+	- shop
+- Profile(login)
+	- Courses
+	- User
+	- 
 
 ## Module
 

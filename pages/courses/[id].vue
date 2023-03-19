@@ -4,125 +4,117 @@
         <section class="text-gray-600 body-font">
             <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                 <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-                    <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+                    <img class="object-cover object-center rounded w-full" alt="hero" :src="data.attributes.src">
                 </div>
                 <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
-                        <br class="hidden lg:inline-block">readymade gluten
+                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900">
+                        {{ data.attributes.name }}
                     </h1>
-                    <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
-                    <div class="flex justify-center">
-                        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-                        <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+                    <p class="mb-3 leading-relaxed">
+                        {{ data.attributes.description }}
+                    </p>
+                    <!-- stats -->
+                    <div class="w-full flex my-6 justify-start space-x-4">
+                        <div class="p-4 bg-white shadow-lg rounded-2xl w-1/3 ">
+                            <div class="flex items-center">
+                                <span class="relative p-2 w-auto h-auto bg-green-500 rounded-full">
+                                    <span class="iconify text-white" data-icon="material-symbols:mode-standby"></span>
+                                </span>
+                                <p class="ml-2 text-gray-700 text-md ">
+                                    mode
+                                </p>
+                            </div>
+                            <div class="flex flex-col justify-start">
+                                <p class="my-4 text-4xl font-bold text-left text-gray-800 ">
+                                    {{ data.attributes.mode }}
+                                </p>
+                                <div class="relative h-2 bg-gray-200 rounded w-28">
+                                    <div class="absolute top-0 left-0 w-full h-2 bg-green-500 rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white shadow-lg rounded-2xl w-1/3 ">
+                            <div class="flex items-center">
+                                <span class="relative p-2 w-auto h-auto bg-green-500 rounded-full">
+                                    <span class="iconify text-white" data-icon="ic:round-access-time-filled"></span>
+                                </span>
+                                <p class="ml-2 text-gray-700 text-md ">
+                                    Duration
+                                </p>
+                            </div>
+                            <div class="flex flex-col justify-start">
+                                <p class="my-4 text-4xl font-bold text-left text-gray-800 ">
+                                    {{ data.attributes.duration }}
+                                </p>
+                                <div class="relative h-2 bg-gray-200 rounded w-28">
+                                    <div class="absolute top-0 left-0 w-full h-2 bg-green-500 rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white shadow-lg rounded-2xl w-1/3 ">
+                            <div class="flex items-center">
+                                <span class="relative p-2 w-auto h-auto bg-green-500 rounded-full">
+                                    <span class="iconify text-white" data-icon="mdi:place-outline"></span>
+                                </span>
+                                <p class="ml-2 text-gray-700 text-md ">
+                                    Join
+                                </p>
+                            </div>
+                            <div class="flex flex-col justify-start">
+                                <a :href="data.attributes.place" class="my-4 text-4xl font-bold text-left text-gray-800 ">
+                                    Click
+                                </a>
+                                <div class="relative h-2 bg-gray-200 rounded w-28">
+                                    <div class="absolute top-0 left-0 w-full h-2 bg-green-500 rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- enroll -->
+                    <div class="w-full">
+                        <button class="w-full font-semibold text-white bg-emerald-500 border-0 py-2 px-6 focus:outline-none hover:bg-emerald-700 rounded text-lg">E N R O L L</button>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- chp -->
-        <div class="container mx-auto flex px-5 md:flex-row flex-col items-center">
-        	<div class="flex">
-            <div class="flex-auto p-5"><a href="#" class="relative block rounded-sm border-t-4 border-pink-600 p-4 shadow-xl sm:p-6 lg:p-8">
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-600 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                        </svg>
-                        <h3 class="text-3xl font-bold sm:text-4xl">100+</h3>
-                    </div>
-                    <p class="mt-4 font-medium text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-                        provident.
-                    </p>
-                </a>
-            </div>
-            <div class="flex-auto p-5"><a href="#" class="relative block rounded-sm border-t-4 border-pink-600 p-4 shadow-xl sm:p-6 lg:p-8">
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-600 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                        </svg>
-                        <h3 class="text-3xl font-bold sm:text-4xl">100+</h3>
-                    </div>
-                    <p class="mt-4 font-medium text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-                        provident.
-                    </p>
-                </a>
-            </div>
-            <div class=" flex-auto p-5"><a href="#" class="relative block rounded-sm border-t-4 border-pink-600 p-4 shadow-xl sm:p-6 lg:p-8">
-                    <div class="flex items-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-600 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                        </svg>
-                        <h3 class="text-3xl font-bold sm:text-4xl">100+</h3>
-                    </div>
-                    <p class="mt-4 font-medium text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-                        provident.
-                    </p>
-                </a>
-            </div>
-        </div>	
-        </div>
-        
         <!-- lessons -->
-        <section class="text-gray-600 body-font overflow-hidden">
-            <div class="container px-5 py-24 mx-auto">
-                <div class="-my-8 divide-y-2 divide-gray-100">
-                    <div class="py-8 flex flex-wrap md:flex-nowrap">
-                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                            <span class="font-semibold title-font text-gray-700">Lesson 1</span>
-                            <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
-                        </div>
-                        <div class="md:flex-grow">
-                            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Bitters hashtag waistcoat fashion axe chia unicorn</h2>
-                            <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                            <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
-                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M5 12h14"></path>
-                                    <path d="M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
+        <section class="">
+            <div class="container max-w-5xl px-4 py-12 mx-auto">
+                <div class="grid gap-4 mx-4 sm:grid-cols-12">
+                    <div class="col-span-12 sm:col-span-3">
+                        <div class="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-emerald-500">
+                            <h3 class="text-3xl font-semibold">Syllabu</h3>
+                            <span class="text-sm font-bold tracking-wider uppercase dark:text-gray-400">Chapters</span>
                         </div>
                     </div>
-                    <div class="py-8 flex flex-wrap md:flex-nowrap">
-                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                            <span class="font-semibold title-font text-gray-700">Lesson 2</span>
-                            <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
-                        </div>
-                        <div class="md:flex-grow">
-                            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Meditation bushwick direct trade taxidermy shaman</h2>
-                            <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                            <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
-                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M5 12h14"></path>
-                                    <path d="M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="py-8 flex flex-wrap md:flex-nowrap">
-                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                            <span class="font-semibold title-font text-gray-700">CATEGORY</span>
-                            <span class="text-sm text-gray-500">12 Jun 2019</span>
-                        </div>
-                        <div class="md:flex-grow">
-                            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Woke master cleanse drinking vinegar salvia</h2>
-                            <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                            <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
-                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M5 12h14"></path>
-                                    <path d="M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
+                    <div class="relative col-span-12 px-4 space-y-6 sm:col-span-9">
+                        <div class="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:bg-gray-700">
+                            <!-- 1 -->
+                            <div v-for="(chp,i) in data.attributes.syallbus" class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-emerald-500">
+                                <h3 class="text-xl font-semibold tracking-wide"> {{ chp.topic }} </h3>
+                                <p class="mt-3 text-sm text-gray-500">
+                                    {{ chp.about }}
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- tuto -->
+       
     </div>
 </template>
-
 <script setup>
-    definePageMeta({
+definePageMeta({
     layout: "admin",
 });
+
+const route = useRoute()
+
+let url = `http://localhost:1337/api/courses/${route.params.id}`
+let { data } = await (await fetch(url)).json()
 </script>
