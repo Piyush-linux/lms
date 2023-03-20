@@ -55,7 +55,8 @@
     </div>
 </template>
 <script setup>
-
+import { useAuthStore } from '@/stores/auth'
+const store = useAuthStore()
 // let courses = [1,2,3]
 
 definePageMeta({
@@ -64,20 +65,24 @@ definePageMeta({
 
 let courses = ref(null)
 let tags = ref(null)
+let headers = {
+    Authorization: `Bearer ${store.token}`
+}
 
 let get_course = async (e) => {
     console.log('get from tags'+e)
     // 1337/api/tags/4?populate=courses&feilds=courses
     let tag = ( e == 'science')? 4 : 3
     let url =`http://localhost:1337/api/tags/${tag}?populate=courses&feilds=courses`
-    let { data: cou } = await (await fetch(url)).json()
+    let { data: cou } = await (await fetch(url,{headers:headers})).json()
     courses.value = cou.attributes.courses.data
     tags.value = e
 }
 
 
 let url ="http://localhost:1337/api/courses"
-let { data: course } = await( await fetch(url)).json()
+let { data: course } = await( await fetch(url,{headers:headers})).json()
+console.log('---')
 courses.value = course
-
+console.log(store.token)
 </script>

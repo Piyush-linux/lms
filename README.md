@@ -1,3 +1,9 @@
+# T A S K
+
+---
+
+- [ ] Auth : Regsiter & Login
+
 # RESOURCE
 
 Dashboard : https://www.tailwind-kit.com/components/data
@@ -57,3 +63,29 @@ icon : https://www.flaticon.com/free-icon/cat_6148636?term=cat&page=12&position=
 ### Blog
 - [x] Render md
 - [ ] Fetch() : /blogs , /blogs/:id , /blogs/?category=...
+
+# API
+
+
+## Auth
+```sh
+echo '{"username":"piyush","email":"piyush@gmail.com","password":"piyush"}' | http http://localhost:1337/api/auth/local/register
+
+echo '{"identifier":"piyush@gmail.com","password":"piyush"}' | http POST ':1337/api/auth/local'
+# {
+#     "jwt": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjc5MjQ4NTQwLCJleHAiOjE2ODE4NDA1NDB9.OpskD6Xy6hwS58aJpAVZAldovmZRc8usIBXUnx0w1NY",
+#     "user": {
+#         "email": "piyush@gmail.com",
+#         "id": 1,
+#         "provider": "local",
+#         "username": "piyush"
+#     }
+# }
+http -A bearer -a 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjc5MjQ4NTQwLCJleHAiOjE2ODE4NDA1NDB9.OpskD6Xy6hwS58aJpAVZAldovmZRc8usIBXUnx0w1NY'  :1337/api/courses
+# data ...
+```
+
+---
+
+# HELP
+- [strapi auth](https://strapi.io/blog/implementing-authenticated-api-requests-to-strapi)

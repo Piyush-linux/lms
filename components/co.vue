@@ -1,6 +1,7 @@
 <template>
     <div class="">
-        <a :href="`/courses/${props.uuid}`" class="relative block overflow-hidden rounded-lg border border-gray-100 p-4 sm:p-6 lg:p-8">
+        <!-- :href="`/courses/${props.uuid}`"  -->
+        <NuxtLink :to="`/courses/${props.uuid}`" class="relative block overflow-hidden rounded-lg border border-gray-100 p-4 sm:p-6 lg:p-8">
             <span class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-emerald-500 to-gray-300"></span>
             <div class="sm:flex sm:justify-between sm:gap-4">
                 <div>
@@ -28,7 +29,7 @@
                     <dd class="text-xs text-gray-500">3 minute</dd>
                 </div>
             </dl>
-        </a>
+        </NuxtLink>
     </div>
 </template>
 

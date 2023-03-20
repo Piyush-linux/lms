@@ -32,11 +32,11 @@
                     </div>
                     <div class="flex items-center gap-4">
                         <div class="sm:flex sm:gap-4">
-                            <NuxtLink to="/login" class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow">
+                            <NuxtLink to="/form/login" class="rounded-md bg-emerald-400 px-5 py-2.5 text-sm font-bold text-white shadow">
                                 Login
                             </NuxtLink>
                             <div class="hidden sm:flex">
-                                <NuxtLink to="/login" class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600" >
+                                <NuxtLink to="/form/register" class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-emerald-600" >
                                     Register
                                 </NuxtLink>
                             </div>

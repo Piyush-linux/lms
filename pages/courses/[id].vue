@@ -93,7 +93,7 @@
                     <div class="relative col-span-12 px-4 space-y-6 sm:col-span-9">
                         <div class="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:bg-gray-700">
                             <!-- 1 -->
-                            <div v-for="(chp,i) in data.attributes.syallbus" class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-emerald-500">
+                            <div v-for="(chp,i) in data.attributes.syallbus" :key="i" class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-emerald-500">
                                 <h3 class="text-xl font-semibold tracking-wide"> {{ chp.topic }} </h3>
                                 <p class="mt-3 text-sm text-gray-500">
                                     {{ chp.about }}
@@ -109,12 +109,24 @@
     </div>
 </template>
 <script setup>
-definePageMeta({
-    layout: "admin",
-});
+import { useAuthStore } from '@/stores/auth'
+const store = useAuthStore()
 
 const route = useRoute()
+console.log('---')
 
+definePageMeta({
+    layout: "admin"
+});
+
+let headers = {
+    Authorization: `Bearer ${store.token}`
+}
+
+console.log(store.token)
+// let data = ref(null)
 let url = `http://localhost:1337/api/courses/${route.params.id}`
-let { data } = await (await fetch(url)).json()
+let { data } = await( await fetch( url , { headers : headers } ) ).json()
+
+console.log(data)
 </script>
