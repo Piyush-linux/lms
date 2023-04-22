@@ -13,7 +13,24 @@ export default defineNuxtConfig({
     },
     modules: [
         '@nuxtjs/tailwindcss',
-        '@pinia/nuxt'
-        ,'@nuxt/devtools'
-        ]
+        '@pinia/nuxt',
+        '@nuxtjs/strapi',
+        '@nuxt/devtools'
+        ],
+      strapi: {
+  url: process.env.STRAPI_URL || 'http://localhost:1337',
+  prefix: '/api',
+  version: 'v4',
+  cookie: {},
+  cookieName: 'lms'
+}
+,
+     runtimeConfig: {
+    // The private keys which are only available within server-side
+    // apiSecret: '123',
+    // Keys within public, will be also exposed to the client-side
+    public: {
+      apiBase: ''
+    }
+  }
 })

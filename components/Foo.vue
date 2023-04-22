@@ -1,6 +1,6 @@
 <template>
     <div class="">
-        <footer class="bg-white">
+        <footer class="bg-white px-24">
             <hr>
             <div class="container flex flex-col items-center justify-between p-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
 

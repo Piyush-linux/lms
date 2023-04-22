@@ -7,7 +7,7 @@
                         {{ data.attributes.title }}
                     </h1>
                     <p class="text-base text-gray-500"> 
-                    {{ data.attributes.Author.Published }} — Written by {{ data.attributes.Author.username }} 
+                    {{ data.attributes.publish }} — Written by {{ data.attributes.author }} 
                 </p>
                 </div>
                 <div class="flex items-center mb-6 space-x-2">
@@ -29,7 +29,7 @@
                         </svg>
                     </a>
                 </div>
-                <img :src="`http://localhost:1337${data.attributes.image.data.attributes.formats.large.url}`" class="object-cover w-full h-64 bg-center rounded" alt="Kutty" />
+                <!-- <img :src="`http://localhost:1337${data.attributes.image.data.attributes.formats.large.url}`" class="object-cover w-full h-64 bg-center rounded" alt="Kutty" /> -->
             </div>
             <div class="w-full mx-auto prose md:w-3/4 lg:w-1/2">
                 <p class="blgg">
@@ -44,8 +44,8 @@
 <script setup>
 const nuxtApp = useNuxtApp()
 const route = useRoute()
-let url = `http://localhost:1337/api/blogs/${route.params.id}?populate=Author,image`
-let { data } = await (await fetch(url)).json()
+let url = `http://localhost:1337/api/blogs/${route.params.id}`
+let { data } = await(await fetch(url)).json()
 
 // const { data: count } = await useFetch('http://localhost:1337/api/blogs/1')
 // const { data: count } = await useFetch('http://localhost:1337/api/blogs/1')

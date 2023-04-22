@@ -1,7 +1,28 @@
 <template>
     <div class="">
+        <!--  -->
+        <section class="h-screen flex items-center">
+            <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+                <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+                    <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+                        <img alt="Party" src="@/assets/mcc.jpeg" class="absolute inset-0 h-full w-full object-cover" />
+                    </div>
+                    <div class="lg:py-24">
+                        <h2 class="text-3xl font-bold sm:text-4xl">Grow your audience</h2>
+                        <p class="mt-4 text-gray-600">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic
+                            atque tenetur quis eius quos ea neque sunt, accusantium soluta minus
+                            veniam tempora deserunt? Molestiae eius quidem quam repellat.
+                        </p>
+                        <a href="#" class="mt-8 inline-block rounded bg-pink-500 px-12 py-3 text-sm font-bold text-white transition hover:bg-pink-700 focus:outline-none focus:ring focus:ring-yellow-400">
+                            Our Team
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- our service -->
-        <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-5">
+        <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 ">
             <h2 class="mb-1 text-3xl font-extrabold leading-tight text-gray-900">Our Service</h2>
             <p class="mb-12 text-lg text-gray-500">Here is a few of the awesome Services we provide.</p>
             <div class="w-full">
@@ -79,22 +100,28 @@
             </div>
         </div>
         <!-- team -->
-           <section class="bg-white">
+        <section class="bg-white h-screen px-20">
             <div class="container px-6 py-10 mx-auto">
                 <h1 class="mb-1 text-3xl font-extrabold text-gray-800 capitalize lg:text-3xl ">Our Executive Team</h1>
                 <p class="mb-12 text-lg text-gray-500">
                     Meet our team members !
                 </p>
                 <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
-                    <teamimg img="/div.png" name="Divya" />
-                    <teamimg img="/om.png" name="Omkar" />
-                    <teamimg img="/om.png" name="Omkar" />
+                    <teamimg img="/div.png" name="Divya" about="UI Designer" />
+                    <teamimg img="/om.png" name="Omkar" about="Product Manager" />
+                    <teamimg img="/deepak.jpg" name="Deepak" about="CTO" />
+                    <teamimg img="/jai.jpg" name="Jayesh" about="Chf. Marketing Manager" />
+                    <teamimg img="/sid.jpg" name="Sidesh" about="Finance Manager" />
+                    <teamimg img="/sujit.jpg" name="Sujit" about="Genaral Manager" />
+                    <teamimg img="/levi.jpg" name="levi" about="Associate Analysit" />
+                    <teamimg img="/salman.jpg" name="Salmon Bhai" about="Prof. Driver" />
                 </div>
             </div>
         </section>
+        <!-- CEO -->
         <div class="container p-44">
             <section class="overflow-hidden rounded-lg shadow-2xl md:grid md:grid-cols-3">
-                <div class="p-4 text-center sm:p-5 md:col-span-2 lg:p-5">
+                <div class="p-5 text-center sm:p-5 md:col-span-2 lg:p-5">
                     <p class="text-sm font-semibold uppercase tracking-widest">
                         Co-Founder
                     </p>
@@ -111,27 +138,8 @@
                         Offer valid until 24th March, 2021 *
                     </p>
                 </div>
-                <img alt="Trainer" class="h-auto" src="ash.png" />
-            </section>
-        </div>
-        <div class="mx-auto max-w-5xl px-4 py-8">
-            <section class="rounded-lg bg-gray-100 p-8">
-
-                <div class="grid grid-cols-1 gap-12 sm:grid-cols-3 sm:items-center">
-                    <img alt="Man" src="/me.png" class="aspect-square w-full rounded-lg object-cover" />
-                    <blockquote class="sm:col-span-2">
-                        <p class="text-xl font-medium sm:text-2xl">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                            perspiciatis cumque neque ut nobis excepturi, quasi iure quisquam
-                            autem alias.
-                        </p>
-                        <cite class="mt-8 inline-flex items-center not-italic">
-                            <span class="hidden h-px w-6 bg-gray-400 sm:inline-block"></span>
-                            <p class="text-sm uppercase text-gray-500 sm:ml-3">
-                                <strong>CEO</strong>, Piyush Patil
-                            </p>
-                        </cite>
-                    </blockquote>
+                <div class=" p-5">
+                    <img alt="Trainer" class="h-auto" src="/ash.png" />
                 </div>
             </section>
         </div>

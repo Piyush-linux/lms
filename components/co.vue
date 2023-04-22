@@ -1,8 +1,9 @@
 <template>
     <div class="">
         <!-- :href="`/courses/${props.uuid}`"  -->
-        <NuxtLink :to="`/courses/${props.uuid}`" class="relative block overflow-hidden rounded-lg border border-gray-100 p-4 sm:p-6 lg:p-8">
-            <span class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-emerald-500 to-gray-300"></span>
+        <NuxtLink :to="`/admin/courses/${props.uuid}`" class="relative block overflow-hidden rounded-lg border border-gray-100 p-4 sm:p-6 lg:p-8 h-full border-2 border-purple-400 rounded-lg">
+            <span class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-purple-500 to-pink-300">
+            </span>
             <div class="sm:flex sm:justify-between sm:gap-4">
                 <div>
                     <h3 class="text-lg font-bold text-gray-900 sm:text-xl">
@@ -10,7 +11,7 @@
                     </h3>
                     <p class="mt-1 text-xs font-medium text-gray-600">By  {{ props.author }} </p>
                 </div>
-                <div class="hidden sm:block sm:shrink-0">
+                <div class="hidden sm:block sm:shrink-0 lg:w-auto">
                     <img alt="Paul Clapton" :src="props.image" class="h-16 w-16 rounded-lg object-cover shadow-sm" />
                 </div>
             </div>

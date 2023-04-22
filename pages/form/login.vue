@@ -15,16 +15,16 @@
                 <div class="mt-4">
                     <label class="block mb-2 text-sm font-medium text-gray-200" for="email">Email
                     </label>
-                    <input v-model="email" id="email" class="block w-full px-4 py-2 border rounded-lg bg-gray-800 text-gray-300 border-gray-600 focus:ring-opacity-40 focus:border-emerald-300 focus:outline-none focus:ring focus:ring-emerald-300" type="email" />
+                    <input v-model="eml" id="email" class="block w-full px-4 py-2 border rounded-lg bg-gray-800 text-gray-300 border-gray-600 focus:ring-opacity-40 focus:border-emerald-300 focus:outline-none focus:ring focus:ring-emerald-300" type="email" />
                 </div>
                 <!-- password -->
                 <div class="mt-4">
                     <label class="block mb-2 text-sm font-medium text-gray-200" for="password">Password
                     </label>
-                    <input v-model="password" id="password" class="block w-full px-4 py-2 border rounded-lg bg-gray-800 text-gray-300 border-gray-600 focus:ring-opacity-40 focus:border-emerald-300 focus:outline-none focus:ring focus:ring-emerald-300" type="password" />
+                    <input v-model="psw" id="password" class="block w-full px-4 py-2 border rounded-lg bg-gray-800 text-gray-300 border-gray-600 focus:ring-opacity-40 focus:border-emerald-300 focus:outline-none focus:ring focus:ring-emerald-300" type="password" />
                 </div>
                 <div class="mt-6">
-                    <button @click="login" class="w-full px-6 py-3 text-sm font-bold tracking-wide text-white capitalize transition-colors duration-300 transform bg-emerald-500 rounded-lg hover:text-emerald-400 hover:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50">
+                    <button @click="submit" class="w-full px-6 py-3 text-sm font-bold tracking-wide text-white capitalize transition-colors duration-300 transform bg-emerald-500 rounded-lg hover:text-emerald-400 hover:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50">
                         L O G I N
                     </button>
                 </div>
@@ -33,27 +33,30 @@
     </div>
 </template>
 <script setup>
-import { useAuthStore } from '@/stores/auth'
-const store = useAuthStore()
-let url = "http://localhost:1337/api/auth/local"
-let email = ref('')
-let password = ref('')
-// let headers = {Authorization:"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjc5MjQ4NTQwLCJleHAiOjE2ODE4NDA1NDB9.OpskD6Xy6hwS58aJpAVZAldovmZRc8usIBXUnx0w1NY"}
-let login = async () => {
-    let bodyy = {
-        identifier: "piyush@gmail.com",
-        password: "piyush"
-    }
-    let data = await (await fetch(url, {
-        method: "POST",
-        headers: {
-            Accept: 'application/json',
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(bodyy)
-    })).json()
 
-    store.token = data.jwt
-    navigateTo('/courses')
+const { login } = useStrapiAuth()
+
+let eml = ref('')
+let psw = ref('')
+
+const submit = async () => {
+    console.log(eml.value)
+    console.log(psw.value)
+    try {
+
+        let user = await login({ identifier: eml.value, password: psw.value })
+        console.log(user.user.value.rol)
+        if(user.user.value.rol == 'student'){
+            navigateTo('/admin/profile')
+        }else if(user.user.value.rol == 'teacher'){
+            navigateTo('/teacher/profile')
+        }
+        // navigateTo('/admin/profile')
+        // navigateTo('/admin/profile')
+    } catch (e) {
+        console.log(e.error)
+        // router.push('/auth')
+    }
 }
+
 </script>

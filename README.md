@@ -1,4 +1,42 @@
-# T A S K
+# Task
+- [x] User enrolled 
+	- fetch user
+	- loop through user enrolled
+	- fetch each courrse and insert into global variable
+	- thehn render that variable in web
+- [ ] UI : Centre
+	- Hero Page
+
+```sh
+DATABASE_URL=mongodb+srv://msfda:xFtXu86eaj2MAM9@cluster0.bgqcqy1.mongodb.net/msfda
+# NUXT_API_SECRET=api_secret_token
+# microsoft@gmail.com / piyush@gmail.com > Piyush9898
+NUXT_PUBLIC_API_BASE=http://127.0.0.1:1337/api
+STRAPI_URL=http://127.0.0.1:1337
+```
+
+
+# UI
+- https://cruip.com
+- https://statichunt.com/tailwind-templates
+
+- /student
+	- /course/:id/teacher : https://componentland.com/component/multivendor-webshop-homepage-2
+	- /course/:id
+		- https://componentland.com/component/call-to-action-4
+		- https://componentland.com/component/course-intro-curriculum-2
+- /teacher
+	- /enrolled/course/users : 
+		- https://tailwindcomponents.com/component/tailwind-css-open-cards
+		- https://tailblocks.cc/ : Team
+- form : https://merakiui.com/components/forms
+- faq : https://merakiui.com/components/portfolio
+- alter : https://wickedblocks.dev/groups/modal/
+
+---
+# SETUP
+- LMS : node version 16
+- strapi : node verion : 14
 
 ---
 
@@ -9,11 +47,15 @@
 Dashboard : https://www.tailwind-kit.com/components/data
 
 ## UI
+
+
+
 - https://app-tailwind.preview.uideck.com/
 icon : https://www.flaticon.com/free-icon/cat_6148636?term=cat&page=12&position=40&origin=search&related_id=6148636
 
 ## Tailwind
-- https://kutty.netlify.app/components/
+- https://componentland.com/components/3
+- https://tailblocks.cc/
 - https://merakiui.com/
 - https://www.hyperui.dev/
 - https://www.tailwind-kit.com/components/team
@@ -21,9 +63,10 @@ icon : https://www.flaticon.com/free-icon/cat_6148636?term=cat&page=12&position=
 - https://tailwindflex.com/tag/feature
 - https://www.floatui.com/components/
 - https://wickedblocks.dev/groups/sidebar/
+- https://kitwind.io/products/kometa/
+- https://kutty.netlify.app/components/
 
 - https://dev.to/mariann93502220/30-free-tailwind-css-templates-to-kick-start-your-next-project-3igo
-- https://kitwind.io/products/kometa/components/contents
 - https://www.creative-tim.com/product/vue-notus?ref=vn-index
 - https://github.com/unlight/tailwind-components#hero
 - https://github.com/slim-python/tailwind-css-free-components
