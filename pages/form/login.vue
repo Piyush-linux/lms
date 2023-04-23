@@ -8,7 +8,7 @@
                 </p>
                 <div class="flex items-center justify-between mt-4">
                     <span class="w-1/5 border-b dark:border-gray-600 lg:w-1/4"></span>
-                    <a href="#" class="text-xs text-center text-gray-500 uppercase dark:text-gray-400 hover:underline">R E G I S T E R</a>
+                    <NuxtLink to="/form/register" class="text-xs text-center text-gray-500 uppercase dark:text-gray-400 hover:underline">R E G I S T E R</NuxtLink>
                     <span class="w-1/5 border-b dark:border-gray-400 lg:w-1/4"></span>
                 </div>
                 <!-- email -->
@@ -45,13 +45,13 @@ const submit = async () => {
     try {
 
         let user = await login({ identifier: eml.value, password: psw.value })
-        console.log(user.user.value.rol)
-        if(user.user.value.rol == 'student'){
-            navigateTo('/admin/profile')
-        }else if(user.user.value.rol == 'teacher'){
-            navigateTo('/teacher/profile')
-        }
-        // navigateTo('/admin/profile')
+        // console.log(user.user.value.rol)
+        // if(user.user.value.rol == 'student'){
+        //     navigateTo('/admin/profile')
+        // }else if(user.user.value.rol == 'teacher'){
+        //     navigateTo('/teacher/profile')
+        // }
+        navigateTo('/admin/profile')
         // navigateTo('/admin/profile')
     } catch (e) {
         console.log(e.error)

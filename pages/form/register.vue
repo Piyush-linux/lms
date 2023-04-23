@@ -41,35 +41,35 @@
     </div>
 </template>
 <script setup>
-let url = "http://localhost:1337/auth/local/register"
+let url = "http://localhost:1337/api/auth/local/register"
 
 let username = ref('')
 let email = ref('')
 let password = ref('')
 
 let register = async () => {
-    let bodyy = {
-            username : 'karan',
-            email : 'karan@gmail.com',
-            password : 'karan98'
-        }
     try {
         // statements
+        // manisha@gmail.com / Manisha9898
+        console.log(username.value)
+        // let hd = { 'Authorization': `Bearer ${token.value}`, 'Content-Type': 'application/json'}
     let data = await (await fetch(url, {
         method: "POST",
-        headers: {
-            Accept: 'application/json',
+        headers: new Headers({
+            'Accept': 'application/json',
             'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(bodyy)
+        }),
+        body: JSON.stringify({
+            username: username.value ,
+            email: email.value ,
+            password: password.value
+        })
     }
     )).json()
-    console.log(bodyy)
-    console.log(data)
+    // console.log(data)
     // navigateTo('/form/login')
     } catch(e) {
         // statements
-        console.log(bodyy);
         console.log(e);
     }
 }

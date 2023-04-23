@@ -1,6 +1,6 @@
 <template>
     <div class="">
-        <section class="w-full m-5 rounded-3xl shadow-2xl p-7">
+        <section class="w-full m-5 rounded-3xl shadow-2xl p-7" style="overflow:scroll; height:700px;">
             <div class="text-3xl font-bold w-1/2">Enrolled Courses</div>
             <div class="mt-6">
                 <div class="w-full" v-for="course in enrolled_courses.courses">
@@ -27,7 +27,7 @@
                                         <div class="rounded-full bg-green-100 px-2 py-0.5 text-green-700"> {{ course.publish }} </div>
                                     </div>
                                 </div>
-                                <NuxtLink :to="`/admin/courses/${course.id}`" class="w-full rounded-md px-5 py-2 text-center transition hover:scale-105 bg-gray-700 text-white sm:ml-auto">View </NuxtLink>
+                                <NuxtLink :to="`/admin/enrolled/${course.id}`" class="w-full rounded-md px-5 py-2 text-center transition hover:scale-105 bg-gray-700 text-white sm:ml-auto">View </NuxtLink>
                             </div>
                         </div>
                     </div>
