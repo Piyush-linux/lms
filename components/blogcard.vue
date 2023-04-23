@@ -12,7 +12,7 @@
             <p class="mb-4 text-base font-normal text-gray-600">
                 {{ props.des }}
             </p>
-            <a :href="`/blogs/${props.links}`" class="btn btn-light btn-sm bg-emerald-300 p-2">Continue Reading</a>
+            <a :href="`/blogs/${props.links}`" class="btn btn-sm bg-pink-300 p-2">Continue Reading</a>
         </div>
     </div>
 </template>

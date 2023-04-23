@@ -1,7 +1,9 @@
 <template>
     <div class="">
+        <!-- hero -->
         <section class="bg-white text-gray-800">
-            <div class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
+
+            <div class="bg-cover h-screen mx-auto px-4 py-32 lg:flex lg:items-center" style="background-image: linear-gradient(rgba(1,1,1,0.2), rgba(23,434,123,0.1)), url('/bg.jpg');">
                 <div class="mx-auto max-w-3xl text-center">
                     <div class="block text-center">
                         <img src="/cat.png" alt="" class="mx-auto">
@@ -9,10 +11,9 @@
                     <h1 class="bg-gradient-to-r from-blue-400 to-pink-500 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl mt-5">
                         P I Y U
                     </h1>
-                    <p class="mx-auto mt-4 max-w-xl sm:text-xl sm:leading-relaxed">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo
-                        tenetur fuga ducimus numquam ea!
-                    </p>
+                    <div class="font-bold mt-5">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Repellendus minus nostrum, consequatur dolores, itaque dicta nemo at possimus eligendi, fugiat ab labore!
+                    </div>
                     <div class="mt-8 flex flex-wrap justify-center gap-4">
                         <a class="block w-full shadow-xl rounded border border-pink-500 bg-pink-500 px-12 py-3 text-sm font-bold text-white hover:bg-transparent hover:text-pink-500 focus:outline-none focus:ring active:text-opacity-75 sm:w-auto" href="/get-started">
                             Tech Stack

@@ -3,7 +3,7 @@
         <article class="px-4 py-24 mx-auto max-w-7xl" itemid="#" itemscope itemtype="http://schema.org/BlogPosting">
             <div class="w-full mx-auto mb-10 text-left md:w-3/4 lg:w-1/2">
                 <div class="pb-6 mb-6 border-b border-gray-200">
-                    <h1 class="mb-3 text-3xl font-bold text-gray-900 md:leading-tight md:text-4xl" itemprop="headline" title="Rise of Tailwind - A Utility First CSS Framework">
+                    <h1 class="mb-3 text-3xl font-bold text-pink-600 md:leading-tight md:text-4xl" itemprop="headline" title="Rise of Tailwind - A Utility First CSS Framework">
                         {{ data.attributes.title }}
                     </h1>
                     <p class="text-base text-gray-500"> 

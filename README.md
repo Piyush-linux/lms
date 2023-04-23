@@ -1,5 +1,7 @@
 # Task
 - [ ] ENV : API
+- [ ] Git : Push /strapi-lms to github
+
 - [x] User enrolled 
 	- fetch user
 	- loop through user enrolled
@@ -56,9 +58,9 @@ icon : https://www.flaticon.com/free-icon/cat_6148636?term=cat&page=12&position=
 
 ## Tailwind
 
-- https://mambaui.com/components/feature
-- https://tailwindflex.com/tag/feature
 - https://componentland.com/components/3
+- https://tailwindflex.com/tag/feature
+- https://mambaui.com/components/feature
 - https://tailblocks.cc/
 - https://merakiui.com/
 - https://www.hyperui.dev/
