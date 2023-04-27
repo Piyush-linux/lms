@@ -2,15 +2,18 @@
 export default defineNuxtConfig({
     app: {
         head: {
-            // link: [
-            //     // <link rel="stylesheet" href="https://myawesome-lib.css">
-            //     { rel: 'stylesheet', href: 'https://code.iconify.design/3/3.1.0/iconify.min.js' }
-            // ],
+            link: [
+                // <link rel="stylesheet" href="https://myawesome-lib.css">
+                { rel: 'stylesheet', href: 'https://code.iconify.design/3/3.1.0/iconify.min.js' }
+            ],
             script: [
                 { src: 'https://code.iconify.design/3/3.1.0/iconify.min.js' }
             ],
         }
     },
+    css: [
+    '~/assets/font/kano.css'
+  ],
     modules: [
         '@nuxtjs/tailwindcss',
         '@pinia/nuxt',

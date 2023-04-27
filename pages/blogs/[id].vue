@@ -32,7 +32,7 @@
                 <!-- <img :src="`http://localhost:1337${data.attributes.image.data.attributes.formats.large.url}`" class="object-cover w-full h-64 bg-center rounded" alt="Kutty" /> -->
             </div>
             <div class="w-full mx-auto prose md:w-3/4 lg:w-1/2">
-                <p class="blgg">
+                <p class="blgg text-justify">
                     <div v-html="nuxtApp.$mdit.render(data.attributes.content)" />
                 </p>
                 <hr class="mt-6">
@@ -52,13 +52,22 @@ let { data } = await(await fetch(url)).json()
 // const count = await $fetch.raw(url)
 </script>
 <style>
+    .blgg img{
+        margin-bottom: 1rem;
+    }
 .blgg h1 {
     font-size: 2rem;
     margin-top: 1.2rem;
 }
 
+.blgg h2 {
+    font-size: 1.7rem;
+    margin-top: 1.2rem;
+}
+
 .blgg p {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+
 }
 
 .blgg code {

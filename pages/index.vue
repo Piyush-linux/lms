@@ -2,25 +2,26 @@
     <div class="">
         <!-- hero -->
         <section class="bg-white text-gray-800">
-
-            <div class="bg-cover h-screen mx-auto px-4 py-32 lg:flex lg:items-center" style="background-image: linear-gradient(rgba(1,1,1,0.2), rgba(23,434,123,0.1)), url('/bg.jpg');">
+<!-- style="background-image: linear-gradient(rgba(1,1,1,0.2), rgba(23,434,123,0.1)), url('/bg.jpg');" 
+bg-gradient-to-b from-pink-100 to-pink-400 -->
+            <div class="h-screen mx-auto px-4 py-32 lg:flex lg:items-center " style="background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);" >
                 <div class="mx-auto max-w-3xl text-center">
                     <div class="block text-center">
                         <img src="/cat.png" alt="" class="mx-auto">
                     </div>
-                    <h1 class="bg-gradient-to-r from-blue-400 to-pink-500 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl mt-5">
+                    <h1 class="f1 text-white bg-clip-text text-3xl font-bold sm:text-5xl mt-5">
                         P I Y U
                     </h1>
-                    <div class="font-bold mt-5">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Repellendus minus nostrum, consequatur dolores, itaque dicta nemo at possimus eligendi, fugiat ab labore!
+                    <div class="font-medium mt-5 text-md">
+                        The more that you read, the more things you will know, <br> the more that you learn, the more places you’ll go
                     </div>
                     <div class="mt-8 flex flex-wrap justify-center gap-4">
-                        <a class="block w-full shadow-xl rounded border border-pink-500 bg-pink-500 px-12 py-3 text-sm font-bold text-white hover:bg-transparent hover:text-pink-500 focus:outline-none focus:ring active:text-opacity-75 sm:w-auto" href="/get-started">
+                        <a class="block w-full shadow-xl rounded border border-pink-500 bg-pink-500 px-12 py-3 text-sm font-bold text-white hover:bg-transparent hover:text-pink-500 focus:outline-none focus:ring active:text-opacity-75 sm:w-auto" href="#techstack">
                             Tech Stack
                         </a>
-                        <a class="block w-full rounded border border-pink-500 px-12 py-3 text-sm font-bold text-pink-500 hover:bg-pink-500 focus:outline-none focus:ring active:bg-emerald-500 text-emerald-700 hover:text-white sm:w-auto" href="/about">
+                        <NuxtLink class="block w-full rounded border border-pink-500 px-12 py-3 text-sm font-bold text-pink-500 hover:bg-pink-500 focus:outline-none focus:ring active:bg-emerald-500 text-emerald-700 hover:text-white sm:w-auto" to="/about">
                             About us
-                        </a>
+                        </NuxtLink>
                     </div>
                 </div>
             </div>
@@ -93,9 +94,9 @@
             </div>
         </div>
         <!-- 3 -->
-        <section class="mx-auto px-6 text-gray-800 md:max-w-screen-xl">
+        <section class="mx-auto px-6 text-gray-800 md:max-w-screen-xl" id="techstack">
             <div class="mx-auto mt-20 mb-16 block px-6 text-center">
-                <h2 class="mx-auto text-4xl font-bold md:text-5xl">Tech Stack</h2>
+                <h2 class="f1 uppercase mx-auto text-4xl font-bold md:text-5xl">TechStack</h2>
             </div>
             <div class="grid gap-10 pb-20 sm:grid-cols-2 lg:grid-cols-3">
                 <div class="rounded-md border border-gray-200 bg-white p-8 shadow-sm">
@@ -106,8 +107,8 @@
                         </div>
                         <h3 class="text-2xl font-bold md:text-xl text-pink-500">Nuxt</h3>
                     </div>
-                    <p class="text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, repellendus.
+                    <p class="text-gray-500 text-justify">
+                        Build your next Vue.js application with confidence using Nuxt. An open source framework making web development simple and powerful.
                     </p>
                 </div>
                 <div class="rounded-md border border-gray-200 bg-white p-8 shadow-sm">
@@ -117,8 +118,8 @@
                         </div>
                         <h3 class="text-2xl font-bold md:text-xl text-pink-500">Strapi</h3>
                     </div>
-                    <p class="text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, repellendus.
+                    <p class="text-gray-500 text-justify">
+                        Strapi is the leading open-source headless CMS. It’s 100% JavaScript and fully customizable.
                     </p>
                 </div>
                 <div class="rounded-md border border-gray-200 bg-white p-8 shadow-sm">
@@ -129,8 +130,8 @@
                         </div>
                         <h3 class="text-2xl font-bold md:text-xl text-pink-500">Tailwind</h3>
                     </div>
-                    <p class="text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, repellendus.
+                    <p class="text-gray-500 text-justify">
+                        A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
                     </p>
                 </div>
                 <div class="rounded-md border border-gray-200 bg-white p-8 shadow-sm">
@@ -140,8 +141,8 @@
                         </div>
                         <h3 class="text-2xl font-bold md:text-xl text-pink-500">Postgres</h3>
                     </div>
-                    <p class="text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, repellendus.
+                    <p class="text-gray-500 text-justify">
+                        PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language.
                     </p>
                 </div>
                 <div class="rounded-md border border-gray-200 bg-white p-8 shadow-sm">
@@ -151,8 +152,8 @@
                         </div>
                         <h3 class="text-2xl font-bold md:text-xl text-pink-500">NodeJS</h3>
                     </div>
-                    <p class="text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, repellendus.
+                    <p class="text-gray-500 text-justify">
+                        Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript Engine, and executes JavaScript code outside a web browser.
                     </p>
                 </div>
                 <div class="rounded-md border border-gray-200 bg-white p-8 shadow-sm">
@@ -162,8 +163,8 @@
                         </div>
                         <h3 class="text-2xl font-bold md:text-xl text-pink-500">Git</h3>
                     </div>
-                    <p class="text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, repellendus.
+                    <p class="text-gray-500 text-justify">
+                        Git is a version control system that tracks changes in any set of computer files, usually used for coordinating work for software development. 
                     </p>
                 </div>
                 

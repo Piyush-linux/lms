@@ -18,9 +18,9 @@
                                 <NuxtLink to="/about" class="text-gray-500 transition hover:text-gray-500/75">
                                     About
                                 </NuxtLink>
-                                <NuxtLink to="/roadmap" class="text-gray-500 transition hover:text-gray-500/75">
+                                <!-- <NuxtLink to="/roadmap" class="text-gray-500 transition hover:text-gray-500/75">
                                     Roadmap
-                                </NuxtLink>
+                                </NuxtLink> -->
                                 <a href="/blogs" class="text-gray-500 transition hover:text-gray-500/75">
                                     Blog
                                 </a>

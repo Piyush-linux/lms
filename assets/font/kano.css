@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'kano';
+/*  font-style: normal;*/
+/*  font-weight: 800;*/
+/*  src: local('kano'), local('Roboto-Regular'), url(kano.woff2) format('otf');*/
+  src: url(Kano.otf);
+}
+
+.f1{
+  font-family:'kano';
+}
+
+.bg-kano{
+  background-color: #e64c4eff;
+}
+.text-kano{
+  color: #e64c4eff;
+}

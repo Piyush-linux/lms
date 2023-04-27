@@ -136,3 +136,11 @@ http -A bearer -a 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjc5
 
 # HELP
 - [strapi auth](https://strapi.io/blog/implementing-authenticated-api-requests-to-strapi)
+
+---
+
+# Pages
+
+- structure 
+/ 
+	- component : nav , hero , footer

@@ -60,7 +60,7 @@
                                 <p class="text-sm text-gray-500">Organization / month</p>
                             </div>
                             <a href="#" class="w-full mt-6 btn btn-primary text-purple-800 btn-lg">
-                            Get started for free
+                            One Time Payment
                           </a>
                         </div>
                         <ul class="flex flex-col flex-grow p-6 space-y-3">
@@ -68,7 +68,7 @@
                                 <svg viewBox="0 0 20 20" fill="currentColor" class="flex-none w-4 h-4 mt-1 mr-2 text-purple-700">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                 </svg>
-                                Unlimited feedback
+                                Deployment
                             </li>
                            
                            
@@ -76,13 +76,13 @@
                                 <svg viewBox="0 0 20 20" fill="currentColor" class="flex-none w-4 h-4 mt-1 mr-2 text-purple-700">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                 </svg>
-                                <span>Unlimited Integrations</span>
+                                <span>Add Courses</span>
                             </li>
                             <li class="flex items-start">
                                 <svg viewBox="0 0 20 20" fill="currentColor" class="flex-none w-4 h-4 mt-1 mr-2 text-purple-700">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                 </svg>
-                                Humane support
+                                Custom UI
                             </li>
                         </ul>
                     </div>
@@ -101,13 +101,13 @@
                                 <svg viewBox="0 0 20 20" fill="currentColor" class="flex-none w-4 h-4 mt-1 mr-2 text-pink-700">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                 </svg>
-                                Unlimited feedback
+                                Custom Feature
                             </li>
                             <li class="flex items-start">
                                 <svg viewBox="0 0 20 20" fill="currentColor" class="flex-none w-4 h-4 mt-1 mr-2 text-pink-700">
                                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                 </svg>
-                                <span class="text-gray-700">Unlimited Integrations</span>
+                                <span class="text-gray-700">Custom UI</span>
                             </li>
                         </ul>
                     </div>
