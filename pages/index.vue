@@ -182,7 +182,7 @@ bg-gradient-to-b from-pink-100 to-pink-400 -->
                         <cite class="mt-8 inline-flex items-center not-italic">
                             <span class="hidden h-px w-6 bg-gray-400 sm:inline-block"></span>
                             <p class="text-sm uppercase text-gray-500 sm:ml-3">
-                                <strong>CEO</strong>, Piyush Patil
+                                <strong>CEO</strong>, Shubham Chavan
                             </p>
                         </cite>
                     </blockquote>
