@@ -11,7 +11,7 @@
 	- Hero Page
 
 ```sh
-DATABASE_URL=mongodb+srv://msfda:xFtXu86eaj2MAM9@cluster0.bgqcqy1.mongodb.net/msfda
+DATABASE_URL=mongodb+srv://username:password@cluster0.abcd.mongodb.net/DBNAME
 # NUXT_API_SECRET=api_secret_token
 # microsoft@gmail.com / piyush@gmail.com > Piyush9898
 NUXT_PUBLIC_API_BASE=http://127.0.0.1:1337/api
